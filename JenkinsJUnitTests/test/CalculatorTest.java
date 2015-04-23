@@ -42,24 +42,24 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         System.out.println("Add");
-        int a = 0;
-        int b = 0;
+        int a = 2;
+        int b = 3;
         Calculator instance = new Calculator();
-        int expResult = 0;
+        int expResult = 5;
         int result = instance.Add(a, b);
         assertEquals(expResult, result);
     }
-
+    
     /**
      * Test of Multiply method, of class Calculator.
      */
     @Test
     public void testMultiply() {
         System.out.println("Multiply");
-        int a = 0;
-        int b = 0;
+        int a = 2;
+        int b = 3;
         Calculator instance = new Calculator();
-        int expResult = 0;
+        int expResult = 6;
         int result = instance.Multiply(a, b);
         assertEquals(expResult, result);
     }
@@ -70,12 +70,39 @@ public class CalculatorTest {
     @Test
     public void testDivide() {
         System.out.println("Divide");
-        int a = 0;
-        int b = 0;
+        int a = 6;
+        int b = 3;
+        Calculator instance = new Calculator();
+        int expResult = 2;
+        int result = instance.Divide(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of Divide method, of class Calculator.
+     */
+    @Test
+    public void testDivide2() {
+        System.out.println("Divide2");
+        int a = 6;
+        int b = 5;
+        Calculator instance = new Calculator();
+        int expResult = 1;
+        int result = instance.Divide(a, b);
+        assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of Divide method, of class Calculator.
+     */
+    @Test
+    public void testDivide3() {
+        System.out.println("Divide3");
+        int a = 1;
+        int b = 10;
         Calculator instance = new Calculator();
         int expResult = 0;
         int result = instance.Divide(a, b);
         assertEquals(expResult, result);
     }
-    
 }
